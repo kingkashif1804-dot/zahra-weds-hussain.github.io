@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zahra weds Hussain</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#241047;color:#3d1a68;font-family:Georgia,'Times New Roman',serif}
+.hero{min-height:100vh;padding:45px 18px 55px;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 20%,#fffaff 0,#f7eaf7 38%,#9b70ba 100%)}
+.hero:before,.hero:after{content:"✿  ❀  ✿  ❀  ✿";position:absolute;color:#67398f;opacity:.25;font-size:75px;line-height:1.6;width:380px}
+.hero:before{left:-145px;top:100px;transform:rotate(-28deg)}.hero:after{right:-145px;top:180px;transform:rotate(28deg)}
+.petals{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.petal{position:absolute;top:-40px;color:#a66bb5;opacity:.7;will-change:transform}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+.card{position:relative;z-index:2;max-width:900px;margin:auto;padding:35px 25px 28px;background:rgba(255,249,250,.84);border:2px solid #caa9cf;border-radius:0 0 48% 48%/0 0 12% 12%;box-shadow:0 20px 60px #35135a30}
+.flowers{font-size:32px;color:#6751a0;letter-spacing:12px}.eyebrow{font-size:16px;letter-spacing:7px;margin:15px 0;color:#43216e}.orn{font-size:20px;color:#77519a}
+h1{font-size:clamp(72px,12vw,140px);line-height:.8;margin:22px 0;color:#3b126d;font-weight:500;letter-spacing:-4px}
+.amp{font-size:72px;color:#a66bb5;font-style:italic;margin:0}.weds{font-size:31px;font-style:italic;margin:25px 0 5px;display:flex;align-items:center;justify-content:center;gap:15px}.weds i{width:95px;height:1px;background:#c7a5ca}.date{font-size:29px;letter-spacing:2px;margin:8px 0 20px}
+.open{border:0;background:none;color:#512b79;font-size:22px;font-style:italic;cursor:pointer;transition:color .3s}.open:hover{color:#a66bb5}.arrow{display:block;font-size:35px;margin-top:3px;animation:bob 2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.count{max-width:850px;margin:25px auto 0;color:#fff;position:relative;z-index:3}.count h2{font-size:18px;letter-spacing:5px;font-weight:normal}.boxes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.box{background:#fff8f8;color:#41206c;border:2px solid #a979bc;border-radius:18px;padding:15px 7px;box-shadow:0 8px 22px #16072e55;transition:transform .25s}.box:hover{transform:translateY(-4px)}.box b{display:block;font-size:48px}.box span{font-size:12px;letter-spacing:2px}
+@keyframes pulse{0%{transform:scale(1)}35%{transform:scale(1.15)}100%{transform:scale(1)}}
+#s{animation:pulse 1s ease-in-out infinite}
+.events{padding:70px 20px 85px;background:linear-gradient(#fff8f8,#f2e5f1);position:relative}.title{display:flex;justify-content:center;align-items:center;gap:18px}.title h2{font-size:44px;font-weight:normal;text-align:center;margin:0 0 45px}.title span{color:#c58e69;font-size:24px;margin-bottom:45px}
+.grid{max-width:1250px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.event{min-height:470px;text-align:center;padding:25px 15px;border:1px solid #d4b4d0;border-radius:30px;background:#fffaf9;box-shadow:0 12px 30px #4c216918;transition:opacity .7s ease,transform .35s ease,box-shadow .35s ease}
+.event:hover{transform:translateY(-10px);box-shadow:0 22px 46px #4c216930}
+.circle{height:135px;width:135px;margin:auto;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#e2d0e9;border:1px solid #b99bc9;transition:background .35s,border-color .35s}.circle strong{font-size:50px;line-height:.8;transition:color .35s}.circle small{font-size:13px;margin-top:8px;letter-spacing:1px;transition:color .35s}
+.event:hover .circle{background:#3d1a68;border-color:#3d1a68}.event:hover .circle strong,.event:hover .circle small{color:#fff8f8}
+.event h3{font-size:27px;line-height:1.05;min-height:60px;margin:28px 0 12px}.line{color:#a778a9}.pin{font-size:25px;color:#9463a7;margin:22px 0 8px}.event p{font-size:18px;line-height:1.25;margin:0}
+.ics{margin-top:16px;border:1px solid #a979bc;background:#fff;color:#512b79;padding:8px 16px;border-radius:999px;font-size:12px;letter-spacing:1px;cursor:pointer;transition:background .3s,color .3s}.ics:hover{background:#3d1a68;color:#fff8f8}
+.message{max-width:850px;text-align:center;margin:70px auto 0;font-size:31px;line-height:1.25;transition:opacity .7s ease,transform .7s ease}.heart{color:#b5679c;font-size:28px;margin-top:15px;display:inline-block;animation:beat 1.6s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+.reveal{opacity:0;transform:translateY(28px)}.reveal.show{opacity:1;transform:translateY(0)}
+.grid .event:nth-child(1){transition-delay:0s}.grid .event:nth-child(2){transition-delay:.08s}.grid .event:nth-child(3){transition-delay:.16s}.grid .event:nth-child(4){transition-delay:.24s}
+footer{background:#29114f;color:#fff;text-align:center;padding:30px;font-size:27px}footer small{display:block;font-size:14px;letter-spacing:3px;margin-top:7px;opacity:.8}
+.share{margin-bottom:18px;border:1px solid #a979bc;background:transparent;color:#fff;padding:10px 22px;border-radius:999px;font-size:13px;letter-spacing:2px;cursor:pointer;transition:background .3s,color .3s}.share:hover{background:#fff;color:#29114f}
+.nav{position:fixed;top:18px;left:50%;transform:translateX(-50%) translateY(-80px);z-index:50;display:flex;gap:6px;background:rgba(255,250,255,.92);border:1px solid #caa9cf;border-radius:999px;padding:8px 10px;box-shadow:0 10px 30px #35135a30;opacity:0;transition:transform .4s ease,opacity .4s ease}
+.nav.show{transform:translateX(-50%) translateY(0);opacity:1}
+.nav a{color:#512b79;text-decoration:none;font-size:12px;letter-spacing:2px;padding:8px 16px;border-radius:999px;transition:background .3s,color .3s}
+.nav a.active,.nav a:hover{background:#3d1a68;color:#fff8f8}
+.totop{position:fixed;right:20px;bottom:20px;z-index:50;width:48px;height:48px;border-radius:50%;border:1px solid #caa9cf;background:#3d1a68;color:#fff8f8;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .3s,transform .3s;box-shadow:0 10px 24px #16072e40}
+.totop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:#3d1a68;color:#fff8f8;padding:12px 22px;border-radius:999px;font-size:14px;letter-spacing:1px;opacity:0;transition:opacity .3s,transform .3s;z-index:60;pointer-events:none;box-shadow:0 10px 24px #16072e40}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.hero{padding-top:25px}.card{border-radius:0 0 25% 25%}.eyebrow{letter-spacing:4px;font-size:13px}h1{font-size:70px}.amp{font-size:55px}.weds{font-size:25px}.date{font-size:23px}.boxes{gap:6px}.box b{font-size:31px}.box span{font-size:9px}.grid{grid-template-columns:1fr}.title h2{font-size:34px}.message{font-size:25px}.nav a{padding:8px 11px;font-size:11px}}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+<a href="#home" data-target="home">Home</a>
+<a href="#events" data-target="events">Celebrations</a>
+</nav>
+<section class="hero" id="home">
+<div class="petals" id="petals"></div>
+<div class="card">
+<div class="flowers">✿　❀　✿</div>
+<div class="eyebrow">WELCOME TO THE WEDDING</div>
+<div class="orn">◆ ── ❧ ── ◆</div>
+<h1>Zahra</h1><div class="weds main-weds"><i></i> weds <i></i></div><h1>Hussain</h1>
+<div class="date">14 — 17 January 2027</div>
+<button class="open" onclick="document.getElementById('events').scrollIntoView({behavior:'smooth'})">Open the invitation<span class="arrow">⌄</span></button>
+</div>
+<div class="count">
+<div class="orn">❧ ───── ✿ ───── ❧</div><h2>COUNTDOWN TO OUR BIG DAY</h2>
+<div class="boxes"><div class="box"><b id="d">--</b><span>DAYS</span></div><div class="box"><b id="h">--</b><span>HOURS</span></div><div class="box"><b id="m">--</b><span>MINUTES</span></div><div class="box"><b id="s">--</b><span>SECONDS</span></div></div>
+</div>
+</section>
+<section class="events" id="events">
+<div class="title"><span>❧</span><h2>Our Wedding Celebrations</h2><span>❧</span></div>
+<div class="grid">
+<article class="event reveal" data-title="Katho, Mosalo &amp; Mehendi" data-date="20270114" data-loc="Address to be announced"><div class="circle"><strong>14</strong><small>JANUARY<br>2027</small></div><h3>Katho, Mosalo<br>&amp; Mehendi</h3><div class="line">✧ ─ ✧</div><div class="pin">●</div><p>Address<br>To Be Announced</p><button class="ics">+ Add to calendar</button></article>
+<article class="event reveal" data-title="Nikah Jaman" data-date="20270115" data-loc="Address to be announced"><div class="circle"><strong>15</strong><small>JANUARY<br>2027</small></div><h3>Nikah Jaman</h3><div class="line">✧ ─ ✧</div><div class="pin">●</div><p>Address<br>To Be Announced</p><button class="ics">+ Add to calendar</button></article>
+<article class="event reveal" data-title="Majlis" data-date="20270116" data-loc="Jamali Masjid, Mustafa Bazaar"><div class="circle"><strong>16</strong><small>JANUARY<br>2027</small></div><h3>Majlis</h3><div class="line">✧ ─ ✧</div><div class="pin">●</div><p>Address<br>Jamali Masjid,<br>Mustafa Bazaar</p><button class="ics">+ Add to calendar</button></article>
+<article class="event reveal" data-title="Reception" data-date="20270117" data-loc="Al Saadah Hall, Bhendi Bazaar"><div class="circle"><strong>17</strong><small>JANUARY<br>2027</small></div><h3>Reception</h3><div class="line">✧ ─ ✧</div><div class="pin">●</div><p>Address<br>Al Saadah Hall,<br>Bhendi Bazaar</p><button class="ics">+ Add to calendar</button></article>
+</div>
+<div class="message reveal"><div class="orn">❧ ───── ✿ ───── ❧</div>You are cordially invited to celebrate<br>our wedding celebrations.<div class="heart">♥</div></div>
+</section>
+<footer>
+<button class="share" id="shareBtn">Share the Invitation ⤴</button>
+<div>Zahra <span>weds</span> Hussain</div>
+<small>14 — 17 January 2027</small>
+</footer>
+<button class="totop" id="totop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+<script>
+const target=new Date('2027-01-14T00:00:00+05:30').getTime();
+function tick(){let x=Math.max(0,target-Date.now());let d=Math.floor(x/86400000),h=Math.floor(x/3600000)%24,m=Math.floor(x/60000)%60,s=Math.floor(x/1000)%60;document.getElementById('d').textContent=d;document.getElementById('h').textContent=String(h).padStart(2,'0');document.getElementById('m').textContent=String(m).padStart(2,'0');document.getElementById('s').textContent=String(s).padStart(2,'0')}tick();setInterval(tick,1000);
+
+const nav=document.getElementById('nav'),navLinks=[...nav.querySelectorAll('a')],sections=[...document.querySelectorAll('section[id]')],totop=document.getElementById('totop');
+function onScroll(){
+  nav.classList.toggle('show',window.scrollY>window.innerHeight*0.6);
+  totop.classList.toggle('show',window.scrollY>500);
+  let current=sections[0].id;
+  for(const sec of sections){if(window.scrollY>=sec.offsetTop-140)current=sec.id}
+  navLinks.forEach(a=>a.classList.toggle('active',a.dataset.target===current));
+}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+totop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const petalsWrap=document.getElementById('petals'),petalChars=['✿','❀','❁'];
+for(let i=0;i<16;i++){
+  const p=document.createElement('span');
+  p.className='petal';p.textContent=petalChars[i%petalChars.length];
+  p.style.left=(i*6.3+Math.random()*4)+'%';
+  p.style.fontSize=(14+((i*37)%16))+'px';
+  const dur=8+((i*53)%10);
+  p.style.animation=`fall ${dur}s linear ${(i*47)%10}s infinite`;
+  petalsWrap.appendChild(p);
+}
+
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._timer);t._timer=setTimeout(()=>t.classList.remove('show'),2200)}
+function pad(n){return String(n).padStart(2,'0')}
+document.querySelectorAll('.ics').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const art=btn.closest('.event'),title=art.dataset.title,date=art.dataset.date,loc=art.dataset.loc;
+    const end=new Date(+date.slice(0,4),+date.slice(4,6)-1,+date.slice(6,8)+1);
+    const endStr=`${end.getFullYear()}${pad(end.getMonth()+1)}${pad(end.getDate())}`;
+    const ics=`BEGIN:VCALENDAR\r\nVERSION:2.0\r\nBEGIN:VEVENT\r\nSUMMARY:${title}\r\nDTSTART;VALUE=DATE:${date}\r\nDTEND;VALUE=DATE:${endStr}\r\nLOCATION:${loc}\r\nDESCRIPTION:Zahra weds Hussain - ${title}\r\nEND:VEVENT\r\nEND:VCALENDAR`;
+    const blob=new Blob([ics],{type:'text/calendar'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+    a.href=url;a.download=`${title.replace(/[^a-z0-9]+/gi,'-')}.ics`;a.click();URL.revokeObjectURL(url);
+    showToast('Added to calendar ✓');
+  });
+});
+
+document.getElementById('shareBtn').addEventListener('click',async()=>{
+  const shareData={title:'Zahra weds Hussain',text:'Join us in celebrating our wedding!',url:location.href};
+  if(navigator.share){try{await navigator.share(shareData)}catch(e){}}
+  else{try{await navigator.clipboard.writeText(location.href);showToast('Link copied ✓')}catch(e){showToast('Copy the link from your address bar')}}
+});
+</script>
+</body></html>
